@@ -1,0 +1,156 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* Warna latar belakang lembut */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header dengan Gradasi */
+header {
+    background: linear-gradient(135deg, #0062ff, #00d2ff);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Layout Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: -40px auto 40px; /* Membuat konten sedikit naik ke atas header */
+    width: 95%;
+    gap: 20px;
+}
+
+/* Sidebar (Menu Samping) */
+.sidebar {
+    background: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #0062ff;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #0062ff;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: #222;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background: #00d2ff;
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+.btn-info {
+    background: #0062ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-info:hover {
+    background: #0046b8;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+}
+
+/* Responsif untuk Tablet/HP */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
