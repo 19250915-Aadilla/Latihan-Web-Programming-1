@@ -41,8 +41,8 @@
                                 <td class="px-4 py-4 text-slate-700">Jakarta</td>
                             </tr>
                             <tr class="bg-pink-50 hover:bg-pink-100">
-                                <td class="px-4 py-4 text-slate-700">Sekar</td>
-                                <td class="px-4 py-4 text-slate-700">19</td>
+                                <td class="px-4 py-4 text-slate-700">Maria</td>
+                                <td class="px-4 py-4 text-slate-700">21</td>
                                 <td class="px-4 py-4 text-slate-700">08987654321</td>
                                 <td class="px-4 py-4 text-slate-700">Bandung</td>
                             </tr>
